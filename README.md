@@ -82,7 +82,8 @@ Here is an example of NFT metadata, the "image" property should have the `QmXa7i
 }
 ```
 
-Uploading the following JSON data to IPFS will return a hash, in this case `QmbAywJY1pvRkzUBAtDrRXBcT5agncKhmy1PcA1877xxth` which resolves to [this](https://vagabond.mypinata.cloud/ipfs/QmbAywJY1pvRkzUBAtDrRXBcT5agncKhmy1PcA1877xxth), this `QmbAywJY1pvRkzUBAtDrRXBcT5agncKhmy1PcA1877xxth` would then be used in the `Metadata IPFS Hash` field on the minting page.
+Uploading the following JSON data to IPFS will return a hash, in this case `QmbAywJY1pvRkzUBAtDrRXBcT5agncKhmy1PcA1877xxth` which resolves to [this](https://vagabond.mypinata.cloud/ipfs/QmbAywJY1pvRkzUBAtDrRXBcT5agncKhmy1PcA1877xxth), this `QmbAywJY1pvRkzUBAtDrRXBcT5agncKhmy1PcA1877xxth` would then be used in the `Metadata IPFS Hash` field on the minting page (the tokenURI could be stored on-chain as either `ipfs://QmbAywJY1pvRkzUBAtDrRXBcT5agncKhmy1PcA1877xxth` or `https://vagabond.mypinata.cloud/ipfs/QmbAywJY1pvRkzUBAtDrRXBcT5agncKhmy1PcA1877xxth`, it's up to you to decide whether to make use of plain `ipfs://<IPFS-HASH>` URLs or if you would rather point to your own node endpoint, most decent parses should be able to extract the IPFS hash from a URL which points to your own IPFS node, but if you would rather not rely on that, use the `ipfs://<IPFS-HASH>` value as the tokenURI).
+
 ## Environment Variables
 
 If you have an Infura API key, add it to the `.env.sample` file and then rename the file to `.env`
